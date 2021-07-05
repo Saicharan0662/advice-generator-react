@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,200&display=swap');
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+#root, html, body{
+  height: 100vh;
+}
+
+.App {
+  height: 100%;
+  background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url('./assets/img.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.card {
+  background: rgba(245, 245, 245, 0.527);
+  width: 40%;
+  height: 27%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 25px;
+  padding: 2%;
+  box-shadow: 3px 2px 5px rgba(0,0,0,0.5);
+}
+
+.heading {
+  display: flex;
+  align-items: center;
+  height: 582px;
+  font-family: 'Nunito', sans-serif;
+  font-size: 25px;
+}
+
+.button {
+  position: relative;
+  outline: none;
+  text-decoration: none;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  text-transform: uppercase;
+  height: 130px;
+  width: 200px;
+  opacity: 1;
+  background-color: #ffffff;
+  border: 1px solid rgba(22, 76, 167, 0.6);
+}
+  
+.button span {
+  color: #164ca7;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.7px;
+}
+
+.button :hover{
+  transform: scale(1.1);
+}
+
+@media only screen and (max-width: 600px) {
+  .card {
+      width: 80%;
+      height: 30%;
+  }
+}
